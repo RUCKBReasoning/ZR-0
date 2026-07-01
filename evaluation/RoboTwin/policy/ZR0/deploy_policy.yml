@@ -1,0 +1,23 @@
+# Basic experiment configuration (keep unchanged)
+policy_name: ZR0
+task_name: adjust_bottle
+#beat_block_hammer
+#adjust_bottle
+
+
+task_config: demo_randomized
+# demo_clean 
+#demo_randomized
+
+max_episode_steps: 400
+n_episodes: 100
+n_action_steps: 16
+
+
+ckpt_setting: demo_clean
+
+seed: 0
+instruction_type: unseen
+
+host: "127.0.0.1"
+port: 8022

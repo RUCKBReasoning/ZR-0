@@ -1,0 +1,586 @@
+# This configuration file specifies available datasets for model training and evaluation.
+# Each dataset entry includes:
+#   - dataset_path: The absolute path to the dataset folder.
+#   - dataset_type: "vlm" for vision-language multimodal datasets or "vla" for embodied action datasets.
+#   - sample_ratio: The sampling ratio for training (usually set to 1.0).
+#   - use_quantile: Whether quantile-based normalization is used.
+#     For VLA datasets ("dataset_type: vla"), this should be explicitly set according to dataset stats.
+#     For VLM datasets ("dataset_type: vlm"), quantile-based normalization is **not required**
+#     and you may omit the `use_quantile` field.
+# 
+# Edit this file to add, remove, or update dataset sources as needed for your training and evaluation pipeline.
+
+table30_vqa:
+  dataset_path: /pretrain_data/Table30/table30_vqa
+  dataset_type: vlm
+  sample_ratio: 1.0
+demo_data.vqa_data:
+  dataset_path: demo_data/vqa_data
+  dataset_type: vlm
+  sample_ratio: 1.0
+demo_data.droid_1.0.1_lerobot:
+  dataset_path: demo_data/droid_1.0.1_lerobot
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+demo_data.libero_v21:
+  dataset_path: demo_data/libero_v21
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromCuttingboardToPotSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromCuttingboardToPotSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPWineToCabinetClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPWineToCabinetClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlateToCardboardboxSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlateToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromTrayToPlateSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromTrayToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromTrayToTieredbasketSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromTrayToTieredbasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPMilkToMicrowaveClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPMilkToMicrowaveClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlateToPanSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlateToPanSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromCuttingboardToBasketSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromCuttingboardToBasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlateToPlateSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlateToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromCuttingboardToPanSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromCuttingboardToPanSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlacematToBasketSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlacematToBasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromTrayToCardboardboxSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromTrayToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlateToBowlSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlateToBowlSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPPotatoToMicrowaveClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPPotatoToMicrowaveClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlacematToPlateSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlacematToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPCupToDrawerClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPCupToDrawerClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromTrayToTieredshelfSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromTrayToTieredshelfSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromCuttingboardToCardboardboxSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromCuttingboardToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromTrayToPotSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromTrayToPotSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPBottleToCabinetClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPBottleToCabinetClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromCuttingboardToTieredbasketSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromCuttingboardToTieredbasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PnPCanToDrawerClose:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PnPCanToDrawerClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlacematToTieredshelfSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlacematToTieredshelfSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+demo_data.robocasa_gr1_tabletop_tasks.gr1_unified.PosttrainPnPNovelFromPlacematToBowlSplitA:
+  dataset_path: demo_data/robocasa_gr1_tabletop_tasks/gr1_unified.PosttrainPnPNovelFromPlacematToBowlSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+CapsFusion-120M:
+  dataset_path: /pretrain_data/vlm_datasets/CapsFusion-120M
+  dataset_type: vlm
+  sample_ratio: 1.0
+RH20T_lerobot:
+  dataset_path: /pretrain_data/RH20T/RH20T_lerobot
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_arrange_flowers:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_arrange_flowers
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_arrange_fruits_in_basket:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_arrange_fruits_in_basket
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_arrange_paper_cups:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_arrange_paper_cups
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_clean_dining_table:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_clean_dining_table
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_fold_dishcloth:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_fold_dishcloth
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_hang_toothbrush_cup:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_hang_toothbrush_cup
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_make_vegetarian_sandwich:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_make_vegetarian_sandwich
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_move_objects_into_box:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_move_objects_into_box
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_open_the_drawer:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_open_the_drawer
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_place_shoes_on_rack:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_place_shoes_on_rack
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_plug_in_network_cable:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_plug_in_network_cable
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_pour_fries_into_plate:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_pour_fries_into_plate
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_press_three_buttons:
+  dataset_path: /root/.lerobot_cache/lerobot/Table30_press_three_buttons-30fps
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_put_cup_on_coaster:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_put_cup_on_coaster
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_put_opener_in_drawer:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_put_opener_in_drawer
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_put_pen_into_pencil_case:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_put_pen_into_pencil_case
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_scan_QR_code:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_scan_QR_code
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_search_green_boxes:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_search_green_boxes
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_set_the_plates:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_set_the_plates
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_shred_scrap_paper:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_shred_scrap_paper
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_sort_books:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_sort_books
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_sort_electronic_products:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_sort_electronic_products
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_stack_bowls:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_stack_bowls
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_stack_color_blocks:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_stack_color_blocks
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_stick_tape_to_box:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_stick_tape_to_box
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_sweep_the_rubbish:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_sweep_the_rubbish
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_turn_on_faucet:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_turn_on_faucet
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_turn_on_light_switch:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_turn_on_light_switch
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_water_potted_plant:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_water_potted_plant
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+Table30_wipe_the_table:
+  dataset_path: /pretrain_data/Table30/ecot_enhanced_table30/Table30_wipe_the_table
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+austin_buds_dataset_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/austin_buds_dataset_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+austin_sailor_dataset_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/austin_sailor_dataset_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+austin_sirius_dataset_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/austin_sirius_dataset_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+berkeley_autolab_ur5:
+  dataset_path: /pretrain_data/oxe_lerobot/berkeley_autolab_ur5
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+bridge_orig_lerobot:
+  dataset_path: /pretrain_data/IPEC-COMMUNITY/bridge_orig_lerobot
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+cmu_play_fusion:
+  dataset_path: /pretrain_data/oxe_lerobot/cmu_play_fusion
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+columbia_cairlab_pusht_real:
+  dataset_path: /pretrain_data/oxe_lerobot/columbia_cairlab_pusht_real
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+dlr_edan_shared_control_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/dlr_edan_shared_control_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+dlr_sara_pour_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/dlr_sara_pour_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+dobbe:
+  dataset_path: /pretrain_data/oxe_lerobot/dobbe
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+droid_1.0.1_lerobot:
+  dataset_path: /pretrain_data/droid_rlds/droid_1.0.1_lerobot
+  dataset_type: vla
+  sample_ratio: 0.5
+  use_quantile: true
+fmb:
+  dataset_path: /pretrain_data/oxe_lerobot/fmb
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+fractal20220817_data_lerobot:
+  dataset_path: /pretrain_data/IPEC-COMMUNITY/fractal20220817_data_lerobot
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+gr1_unified.PnPBottleToCabinetClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPBottleToCabinetClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PnPCanToDrawerClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPCanToDrawerClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PnPCupToDrawerClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPCupToDrawerClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PnPMilkToMicrowaveClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPMilkToMicrowaveClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PnPPotatoToMicrowaveClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPPotatoToMicrowaveClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PnPWineToCabinetClose:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PnPWineToCabinetClose
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromCuttingboardToBasketSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromCuttingboardToBasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromCuttingboardToCardboardboxSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromCuttingboardToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromCuttingboardToPanSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromCuttingboardToPanSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromCuttingboardToPotSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromCuttingboardToPotSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromCuttingboardToTieredbasketSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromCuttingboardToTieredbasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlacematToBasketSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlacematToBasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlacematToBowlSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlacematToBowlSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlacematToPlateSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlacematToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlacematToTieredshelfSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlacematToTieredshelfSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlateToBowlSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlateToBowlSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlateToCardboardboxSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlateToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlateToPanSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlateToPanSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromPlateToPlateSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromPlateToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromTrayToCardboardboxSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromTrayToCardboardboxSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromTrayToPlateSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromTrayToPlateSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromTrayToPotSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromTrayToPotSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromTrayToTieredbasketSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromTrayToTieredbasketSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+gr1_unified.PosttrainPnPNovelFromTrayToTieredshelfSplitA:
+  dataset_path: /pretrain_data/PhysicalAI-Robotics-GR00T-Teleop-Sim/gr1_unified.PosttrainPnPNovelFromTrayToTieredshelfSplitA
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: false
+iamlab_cmu_pickup_insert_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/iamlab_cmu_pickup_insert_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+jaco_play:
+  dataset_path: /pretrain_data/oxe_lerobot/jaco_play
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+jaka_teleop_eef_lerobot-5fps:
+  dataset_path: /pretrain_data/ruc_xarm_tabletop/jaka_teleop_eef_lerobot-5fps
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+language_table:
+  dataset_path: /pretrain_data/oxe_lerobot/language_table
+  dataset_type: vla
+  sample_ratio: 0.2
+  use_quantile: true
+libero_v21:
+  dataset_path: /pretrain_data/sim_benchmarks/libero_v21
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+nyu_door_opening_surprising_effectiveness:
+  dataset_path: /pretrain_data/oxe_lerobot/nyu_door_opening_surprising_effectiveness
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+pixmo-ask-model-anything:
+  dataset_path: /pretrain_data/vlm_datasets/pixmo-ask-model-anything
+  dataset_type: vlm
+  sample_ratio: 1.0
+pixmo-cap:
+  dataset_path: /pretrain_data/vlm_datasets/pixmo-cap
+  dataset_type: vlm
+  sample_ratio: 1.0
+pixmo-cap-qa:
+  dataset_path: /pretrain_data/vlm_datasets/pixmo-cap-qa
+  dataset_type: vlm
+  sample_ratio: 1.0
+put_blocks_into_green_cup:
+  dataset_path: /pretrain_data/ruc_xarm_tabletop/so_101_datasets/put_blocks_into_green_cup
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+qut_dexterous_manpulation:
+  dataset_path: /pretrain_data/oxe_lerobot/qut_dexterous_manpulation
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+real_world_tabletop_tasks_1013:
+  dataset_path: /pretrain_data/ruc_xarm_tabletop/real_world_tabletop_tasks_1013
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+robotwin2.0-aloha-agilex:
+  dataset_path: /pretrain_data/sim_benchmarks/robotwin2.0-aloha-agilex
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+robotwin2.0-aloha-agilex_randomized_48x500:
+  dataset_path: /pretrain_data/sim_benchmarks/robotwin2.0-aloha-agilex_randomized_48x500
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+simulation_tabletop_tasks_1013:
+  dataset_path: /pretrain_data/ruc_xarm_tabletop/simulation_tabletop_tasks_1013
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+stanford_hydra_dataset_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/stanford_hydra_dataset_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+toto:
+  dataset_path: /pretrain_data/oxe_lerobot/toto
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+ucsd_kitchen_dataset_converted_externally_to_rlds:
+  dataset_path: /pretrain_data/oxe_lerobot/ucsd_kitchen_dataset_converted_externally_to_rlds
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true
+utaustin_mutex:
+  dataset_path: /pretrain_data/oxe_lerobot/utaustin_mutex
+  dataset_type: vla
+  sample_ratio: 1.0
+  use_quantile: true

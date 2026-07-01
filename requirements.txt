@@ -1,0 +1,15 @@
+transformers==4.57.1
+accelerate==1.6.0
+deepspeed==0.15.4
+matplotlib==3.10.1
+qwen_vl_utils==0.0.14
+tensorboard==2.19.0
+uvicorn==0.34.2
+fastapi==0.115.12
+peft==0.17.1
+websockets==15.0.1
+orjson==3.11.5
+scipy
+orjson
+# accelerate==1.5.2
+# deepspeed==0.16.9
